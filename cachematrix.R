@@ -4,7 +4,7 @@
 # instead of recalculating the inverse, if the original matrix has not changed
 
 # function makeCacheMatrix
-# Creates a CacheMatrix object which caches the matrix to be inversed 
+# Creates a CacheMatrix 'object' which caches the matrix to be inversed 
 # as well as the result of matrix inversion. 
 # In reality, it is a list of get/set functions for the matrix 
 # and its inverse
@@ -48,13 +48,13 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 # function cacheSolve
-# Returns the inverse of the matrix stored in the CacheMatrix object passed in. 
+# Returns the inverse of the matrix stored in the CacheMatrix 'object' passed in
 # If the inverse has already been calculated (and cached),
 # it returns the cached inverse instead of re-calculating it.
 # Note: a CacheMatrix is created using the makeCacheMatrix function
 #
 # Args:
-#   x: a CacheMatrix
+#   x: a CacheMatrix storing an invertible matrix
 #   ...: Optional arguments for solve()
 #
 # Returns:
